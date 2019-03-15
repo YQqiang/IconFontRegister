@@ -7,6 +7,7 @@
 //
 
 #import "YQViewController.h"
+#import <IconFontRegister/IconFontRegister.h>
 
 @interface YQViewController ()
 

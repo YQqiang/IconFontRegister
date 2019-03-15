@@ -22,7 +22,7 @@ pod 'IconFontRegister'
 
 ## Author
 
-oxape, 1054572107@qq.com
+YQ, yuqiang.coder@gmail.com
 
 ## License
 

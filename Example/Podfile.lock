@@ -1,0 +1,16 @@
+PODS:
+  - IconFontRegister (0.1.0)
+
+DEPENDENCIES:
+  - IconFontRegister (from `../`)
+
+EXTERNAL SOURCES:
+  IconFontRegister:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IconFontRegister: 4798e4bff0661061cd7b45992a6ca5ae7388aaf0
+
+PODFILE CHECKSUM: eaa1220e8dcf18a220c3eecdd55a9281604862d3
+
+COCOAPODS: 1.6.0.beta.2
