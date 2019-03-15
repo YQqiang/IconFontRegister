@@ -11,6 +11,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <CoreText/CoreText.h>
+#import "UIImage+IconFontRegister.h"
 
 /**
  根据文件路径注册字体

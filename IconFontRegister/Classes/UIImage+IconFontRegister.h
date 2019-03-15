@@ -16,7 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
                   backgroundColor:(UIColor *)bgColor
                         iconColor:(UIColor *)iconColor
                              size:(CGSize)size
-                      imageInsets:(UIEdgeInsets)insets;
+                      imageInsets:(UIEdgeInsets)insets
+                 imageOrientation:(UIImageOrientation)imageOrientation;
 
 @end
 

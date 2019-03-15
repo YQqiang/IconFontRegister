@@ -14,7 +14,8 @@
                   backgroundColor:(UIColor *)bgColor
                         iconColor:(UIColor *)iconColor
                              size:(CGSize)size
-                      imageInsets:(UIEdgeInsets)insets {
+                      imageInsets:(UIEdgeInsets)insets
+                 imageOrientation:(UIImageOrientation)imageOrientation {
     if (!bgColor) {
         bgColor = [UIColor clearColor];
     }
@@ -51,7 +52,7 @@
 #pragma clang pop
     }
     
-    UIImage *image = [UIImage imageWithCGImage:UIGraphicsGetImageFromCurrentImageContext().CGImage scale:scale orientation:UIImageOrientationUp];
+    UIImage *image = [UIImage imageWithCGImage:UIGraphicsGetImageFromCurrentImageContext().CGImage scale:scale orientation:imageOrientation];
     UIGraphicsEndImageContext();
     
     return image;

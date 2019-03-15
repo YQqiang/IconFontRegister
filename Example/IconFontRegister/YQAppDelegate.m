@@ -7,12 +7,14 @@
 //
 
 #import "YQAppDelegate.h"
+#import <IconFontRegister/IconFontRegister.h>
 
 @implementation YQAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    RegisterFontWithOnlyName(@"iconfont");
     return YES;
 }
 

@@ -19,6 +19,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    UIImage *image = [UIImage IFR_imageWithUnicode:@"\U0000eb74" fontName:@"YQIconFont" backgroundColor:UIColor.groupTableViewBackgroundColor iconColor:UIColor.redColor size:CGSizeMake(64, 64) imageInsets:UIEdgeInsetsMake(4, 4, 4, 4) imageOrientation:UIImageOrientationDownMirrored];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    [self.view addSubview:imageView];
+    imageView.center = self.view.center;
 }
 
 - (void)didReceiveMemoryWarning
