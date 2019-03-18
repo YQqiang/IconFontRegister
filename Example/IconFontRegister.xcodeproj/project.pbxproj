@@ -67,7 +67,7 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CF4C01891022FFFA7BBB725 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B2BAC95CB8CCA8E6846F0AB7 /* Pods-IconFontRegister_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IconFontRegister_Tests.release.xcconfig"; path = "Target Support Files/Pods-IconFontRegister_Tests/Pods-IconFontRegister_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C5DBB615466F3C160DFC0A87 /* IconFontRegister.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IconFontRegister.podspec; path = ../IconFontRegister.podspec; sourceTree = "<group>"; };
+		C5DBB615466F3C160DFC0A87 /* IconFontRegister.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IconFontRegister.podspec; path = ../IconFontRegister.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D413BA3AE2933EBD76DBFFDB /* Pods_IconFontRegister_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IconFontRegister_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
