@@ -16,7 +16,14 @@
                              size:(CGSize)size
                       imageInsets:(UIEdgeInsets)insets
                  imageOrientation:(UIImageOrientation)imageOrientation {
-    return [self IFR_imageWithUnicode:unicode fontName:fontName gradientColors:@[bgColor] gradientLocations:@[] gradientStartPoint:CGPointZero gradientEndPoint:CGPointMake(size.width, size.height) iconColor:iconColor size:size imageInsets:insets imageOrientation:imageOrientation];
+    return [self IFR_imageWithUnicode:unicode
+                             fontName:fontName
+                       gradientColors:@[bgColor]
+                    gradientLocations:@[]
+                   gradientStartPoint:CGPointZero
+                     gradientEndPoint:CGPointMake(size.width, size.height)
+                            iconColor:iconColor size:size imageInsets:insets
+                     imageOrientation:imageOrientation];
 }
 
 + (UIImage *)IFR_imageWithUnicode:(NSString *)unicode
@@ -29,6 +36,30 @@
                              size:(CGSize)size
                       imageInsets:(UIEdgeInsets)insets
                  imageOrientation:(UIImageOrientation)imageOrientation {
+    return [self IFR_imageWithUnicode:unicode
+                             fontName:fontName
+                       gradientColors:gradientColors
+                    gradientLocations:gradientLocations
+                   gradientStartPoint:gradientStartPoint
+                     gradientEndPoint:gradientEndPoint iconColor:iconColor
+                                 size:size imageInsets:insets
+                     imageOrientation:imageOrientation
+                          strokeColor:UIColor.clearColor
+                          strokeWidth:0];
+}
+
++ (UIImage *)IFR_imageWithUnicode:(NSString *)unicode
+                         fontName:(NSString *)fontName
+                   gradientColors:(NSArray <UIColor *>*)gradientColors
+                gradientLocations:(NSArray <NSNumber *>*)gradientLocations
+               gradientStartPoint:(CGPoint)gradientStartPoint
+                 gradientEndPoint:(CGPoint)gradientEndPoint
+                        iconColor:(UIColor *)iconColor
+                             size:(CGSize)size
+                      imageInsets:(UIEdgeInsets)insets
+                 imageOrientation:(UIImageOrientation)imageOrientation
+                      strokeColor:(UIColor *)strokeColor
+                      strokeWidth:(CGFloat)strokeWidth {
     if (!iconColor) {
         iconColor = [UIColor whiteColor];
     }
@@ -78,7 +109,7 @@
     
     CGPoint point = CGPointMake(imageInsets.left * scale, imageInsets.top * scale);
     if ([unicode respondsToSelector:@selector(drawAtPoint:withAttributes:)]) {
-        [unicode drawAtPoint:point withAttributes:@{NSFontAttributeName:font, NSForegroundColorAttributeName: iconColor}];
+        [unicode drawAtPoint:point withAttributes:@{NSFontAttributeName:font, NSForegroundColorAttributeName: iconColor, NSStrokeColorAttributeName: strokeColor, NSStrokeWidthAttributeName: @(strokeWidth)}];
     } else {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
