@@ -22,7 +22,9 @@
                     gradientLocations:@[]
                    gradientStartPoint:CGPointZero
                      gradientEndPoint:CGPointMake(size.width, size.height)
-                            iconColor:iconColor size:size imageInsets:insets
+                            iconColor:iconColor
+                                 size:size
+                          imageInsets:insets
                      imageOrientation:imageOrientation];
 }
 
@@ -41,8 +43,10 @@
                        gradientColors:gradientColors
                     gradientLocations:gradientLocations
                    gradientStartPoint:gradientStartPoint
-                     gradientEndPoint:gradientEndPoint iconColor:iconColor
-                                 size:size imageInsets:insets
+                     gradientEndPoint:gradientEndPoint
+                            iconColor:iconColor
+                                 size:size
+                          imageInsets:insets
                      imageOrientation:imageOrientation
                           strokeColor:UIColor.clearColor
                           strokeWidth:0];
